@@ -239,7 +239,11 @@ make_gridpack () {
             elif [[ $model == *".tgz"* ]]; then
               tar zxvf ../$model
             elif [[ $model == *".tar"* ]]; then
-              tar xavf ../$model
+              echo "JOHN TEST"
+              pwd
+              CMD="tar xavf ../$model"
+              echo $CMD
+              $CMD
             else 
               echo "A BSM model is specified but it is not in a standard archive (.zip or .tar)"
             fi
