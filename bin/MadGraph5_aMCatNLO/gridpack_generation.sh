@@ -244,6 +244,14 @@ make_gridpack () {
               CMD="tar xavf ../$model"
               echo $CMD
               $CMD
+              echo 1
+              ls ..
+              echo 2
+              ls ../..
+              echo 3
+              ls ../../..
+              echo 4
+              ls ../../..
             else 
               echo "A BSM model is specified but it is not in a standard archive (.zip or .tar)"
             fi
